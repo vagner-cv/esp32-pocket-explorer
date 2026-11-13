@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<title>Diagrama ilustrativo de ligações Pocket Explorer ESP32-S3</title>
+<desc>Waveshare ESP32-S3-LCD-1.3 com GPS UART GPIO1, BME280 e QMC5883L em I2C externo GPIO8 e GPIO9, três botões GPIO10 a GPIO12, tela ST7789 e QMI8658 integrados. Alimentação da bateria pendente de verificação.</desc>
+<rect width="1440" height="900" fill="#f1f5f9"/>
+<text x="70" y="76" fill="#183448" font-family="Arial,sans-serif" font-weight="800" font-size="39">POCKET EXPLORER</text>
+<text x="72" y="108" fill="#536a79" font-family="Arial,sans-serif" font-size="19">DIAGRAMA DE PINAGEM · CONFIGURAÇÃO REGISTRADA NO PROTÓTIPO</text>
+<rect x="476" y="174" width="480" height="547" rx="30" fill="#17394a" stroke="#0c2430" stroke-width="6"/>
+<rect x="503" y="214" width="426" height="425" rx="18" fill="#244e5a" stroke="#8bc1c7" stroke-width="3"/>
+<rect x="542" y="248" width="350" height="250" rx="12" fill="#0a1722" stroke="#2f859d" stroke-width="3"/>
+<text x="580" y="299" font-family="Arial,sans-serif" fill="#70e2d0" font-size="23" font-weight="700">ST7789 · 240 × 240</text>
+<text x="579" y="342" font-family="Arial,sans-serif" fill="#e7f7ff" font-size="24" font-weight="800">POCKET EXPLORER</text>
+<rect x="579" y="367" width="275" height="50" rx="10" fill="#1e5365"/>
+<text x="605" y="401" font-family="Arial,sans-serif" fill="#e7ffff" font-size="24">GPS  •  MAPAS  •  TEMPO</text>
+<text x="578" y="454" font-family="Arial,sans-serif" fill="#82aeb9" font-size="18">Display já integrado</text>
+<text x="545" y="536" fill="#e8fcfe" font-family="Arial,sans-serif" font-size="21" font-weight="700">Waveshare ESP32-S3-LCD-1.3</text>
+<text x="546" y="566" fill="#b6dae0" font-family="Arial,sans-serif" font-size="17">ESP32-S3 · Flash 16 MB · PSRAM 8 MB</text>
+<rect x="540" y="584" width="352" height="35" rx="8" fill="#376c78"/>
+<text x="561" y="609" fill="#d8fff0" font-family="Arial,sans-serif" font-size="17">QMI8658 interno: SDA 47 · SCL 48</text>
+<rect x="546" y="659" width="176" height="40" rx="8" fill="#09313a"/>
+<text x="559" y="685" fill="#a9f3cb" font-family="Arial,sans-serif" font-size="17">microSD interno</text>
+<rect x="743" y="659" width="171" height="40" rx="8" fill="#09313a"/>
+<text x="758" y="685" fill="#a9f3cb" font-family="Arial,sans-serif" font-size="17">Carregador Li-ion</text>
+<!-- GPS -->
+<rect x="67" y="184" width="323" height="134" rx="16" fill="#fff" stroke="#63a9d6" stroke-width="3"/>
+<rect x="67" y="184" width="323" height="13" rx="6" fill="#63a9d6"/>
+<text x="90" y="229" fill="#163f5c" font-family="Arial,sans-serif" font-size="25" font-weight="800">GPS NMEA</text>
+<text x="90" y="258" fill="#4b687a" font-family="Arial,sans-serif" font-size="18">TX GPS → RX ESP32</text>
+<text x="90" y="287" fill="#0876b6" font-family="Arial,sans-serif" font-size="23" font-weight="800">GPIO1</text>
+<path d="M 391 250 L 431 250 L 431 267 L 476 267" stroke="#238fd4" stroke-width="5" fill="none"/>
+<!-- BME -->
+<rect x="67" y="361" width="323" height="124" rx="16" fill="#fff" stroke="#52b7a5" stroke-width="3"/>
+<rect x="67" y="361" width="323" height="12" rx="6" fill="#52b7a5"/>
+<text x="90" y="405" fill="#163f5c" font-family="Arial,sans-serif" font-size="25" font-weight="800">BME280</text>
+<text x="90" y="434" fill="#4b687a" font-family="Arial,sans-serif" font-size="18">Temperatura, umidade, pressão</text>
+<text x="90" y="460" fill="#14846d" font-family="Arial,sans-serif" font-size="18" font-weight="700">SDA 8  ·  SCL 9</text>
+<path d="M 391 428 L 443 428 L 443 413 L 476 413" stroke="#189b8a" stroke-width="5" fill="none"/>
+<!-- MAG -->
+<rect x="67" y="525" width="323" height="124" rx="16" fill="#fff" stroke="#52b7a5" stroke-width="3"/>
+<rect x="67" y="525" width="323" height="12" rx="6" fill="#52b7a5"/>
+<text x="90" y="568" fill="#163f5c" font-family="Arial,sans-serif" font-size="25" font-weight="800">QMC5883L</text>
+<text x="90" y="597" fill="#4b687a" font-family="Arial,sans-serif" font-size="18">Magnetômetro / bússola</text>
+<text x="90" y="625" fill="#14846d" font-family="Arial,sans-serif" font-size="18" font-weight="700">I²C compartilhado: 8 / 9</text>
+<path d="M 391 583 L 432 583 L 432 428" stroke="#189b8a" stroke-width="5" fill="none"/>
+<circle cx="432" cy="428" r="7" fill="#189b8a"/>
+<!-- BUTTONS -->
+<rect x="1032" y="184" width="340" height="226" rx="16" fill="#fff" stroke="#efad5f" stroke-width="3"/>
+<rect x="1032" y="184" width="340" height="13" rx="6" fill="#efad5f"/>
+<text x="1056" y="233" fill="#764818" font-family="Arial,sans-serif" font-size="25" font-weight="800">3 BOTÕES EXTERNOS</text>
+<text x="1056" y="276" fill="#4f6471" font-family="Arial,sans-serif" font-size="19">Anterior</text>
+<text x="1262" y="276" fill="#bd6a00" font-family="Arial,sans-serif" font-size="21" font-weight="800">GPIO10</text>
+<text x="1056" y="318" fill="#4f6471" font-family="Arial,sans-serif" font-size="19">Confirmar / OK</text>
+<text x="1262" y="318" fill="#bd6a00" font-family="Arial,sans-serif" font-size="21" font-weight="800">GPIO11</text>
+<text x="1056" y="360" fill="#4f6471" font-family="Arial,sans-serif" font-size="19">Próximo</text>
+<text x="1262" y="360" fill="#bd6a00" font-family="Arial,sans-serif" font-size="21" font-weight="800">GPIO12</text>
+<path d="M 1031 301 L 989 301 L 989 340 L 956 340" stroke="#e39a3d" stroke-width="5" fill="none"/>
+<!-- Battery -->
+<rect x="1032" y="465" width="340" height="183" rx="16" fill="#fff" stroke="#a9b2bf" stroke-width="3" stroke-dasharray="9 5"/>
+<text x="1056" y="512" fill="#394f61" font-family="Arial,sans-serif" font-size="24" font-weight="800">BATERIA 3,7 V</text>
+<text x="1056" y="543" fill="#566878" font-family="Arial,sans-serif" font-size="19">Li-ion 500 mAh (planejada)</text>
+<text x="1056" y="573" fill="#b45309" font-family="Arial,sans-serif" font-size="17" font-weight="700">Conector incompatível</text>
+<text x="1056" y="597" fill="#687785" font-family="Arial,sans-serif" font-size="17">Polaridade e pinagem a conferir</text>
+<path d="M 1030 571 L 957 571" stroke="#b6a69e" stroke-width="4" stroke-dasharray="10 8" fill="none"/>
+<!-- footer -->
+<rect x="67" y="762" width="1305" height="91" rx="14" fill="#e2ecf1" stroke="#cbdde5"/>
+<text x="94" y="797" fill="#264657" font-family="Arial,sans-serif" font-size="18" font-weight="800">LEGENDA</text>
+<line x1="214" y1="790" x2="267" y2="790" stroke="#238fd4" stroke-width="5"/><text x="278" y="797" fill="#426074" font-family="Arial,sans-serif" font-size="16">GPS UART</text>
+<line x1="436" y1="790" x2="491" y2="790" stroke="#189b8a" stroke-width="5"/><text x="502" y="797" fill="#426074" font-family="Arial,sans-serif" font-size="16">I²C externo</text>
+<line x1="691" y1="790" x2="745" y2="790" stroke="#e39a3d" stroke-width="5"/><text x="755" y="797" fill="#426074" font-family="Arial,sans-serif" font-size="16">Botões</text>
+<line x1="910" y1="790" x2="965" y2="790" stroke="#b6a69e" stroke-width="4" stroke-dasharray="10 8"/><text x="977" y="797" fill="#426074" font-family="Arial,sans-serif" font-size="16">Pendente</text>
+<text x="94" y="832" fill="#657a86" font-family="Arial,sans-serif" font-size="16">Ligação ilustrativa • Use alimentação e GND conforme seu módulo físico • Conferir firmware final.</text>
+</svg>
